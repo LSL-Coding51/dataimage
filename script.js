@@ -1,8 +1,8 @@
 const ACCESS_KEY = "H9E7Cm1F7xUK1tCq2s3UPSFPAXPBA2qQJ6SobC3Svvc"
-const searchForm = document.getElementBYId("search-form");
-const searchBox = document.getElementBYId("search-box");
-const searchResult = document.getElementBYId("search-result");
-const showMoreBtn = document.getElementBYId("show-more-btn");
+const searchForm = document.getElementById("search-form");
+const searchBox = document.getElementById("search-box");
+const searchResult = document.getElementById("search-result");
+const showMoreBtn = document.getElementById("show-more-btn");
 let keyword = "";
 let page = 1;
 async function searchImages(){
