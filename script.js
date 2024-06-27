@@ -10,10 +10,10 @@ async function searchImages(){
   const url = "https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${ACCESS_KEY}";
   const response = await fetch(url);
   const data = await response.json();
-  const results = data.results;
+  const results = data.result;
   results.map((result) =>{
     const image = document.createElement("img");
-    image.src = results.urls.small;
+    image.src = result.urls.small;
     const imageLink = document.createElement("a");
     imageLink.href = result.links.html;
     imageLink.target = "_blank";
